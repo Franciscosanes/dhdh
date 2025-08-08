@@ -1,6 +1,7 @@
   // Enviar formulario a Supabase
   const form = document.querySelector('.rsvp form');
-  
+  const mensajeExito = document.getElementById('mensaje-exito');
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
@@ -30,8 +31,17 @@
         });
 
         if (res.ok) {
-          
-          alert('¡Gracias por confirmar tu asistencia!')
+          const resumen = `
+        <strong>¡Gracias por confirmar, ${nombre}!</strong><br><br>
+        <u>Resumen de tu confirmación:</u><br>
+        👤 <strong>Nombre:</strong> ${nombre}<br>
+        👥 <strong>Acompañantes:</strong> ${acompanantes}<br>
+        ✉️ <strong>Mensaje:</strong> ${mensaje || "Sin dedicatoria"}<br><br>
+        ¡Estamos felices de contar contigo en este día tan especial!
+      `;
+
+      mensajeExito.innerHTML = resumen;
+      mensajeExito.style.display = 'block';
           form.reset();
         } else {
           const error = await res.json();
