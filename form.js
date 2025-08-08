@@ -6,7 +6,7 @@
       e.preventDefault();
 
       const nombre = form.querySelector('input[type="text"]').value.trim();
-      const acompanantes = form.querySelector('input[type="number"]').value;
+      const acompanantes = form.querySelector('select[name="acompanantes"]').value;
       const mensaje = form.querySelector('textarea').value.trim();
 
       if (!nombre || isNaN(acompanantes)) {
