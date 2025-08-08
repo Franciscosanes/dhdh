@@ -102,7 +102,21 @@
     <section class="rsvp">
       <form id="form-confirmacion">
         <input type="text" placeholder="Tu nombre" required>
-        <input type="number" placeholder="Número de acompañantes" required min="0" max="10">
+        <!-- Campo de selección para número de acompañantes -->
+  <select name="acompanantes" required>
+    <option value="" disabled selected>Selecciona número de acompañantes</option>
+    <option value="0">0 (Voy solo/a)</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
         <textarea placeholder="Mensaje o dedicatoria (opcional)"></textarea>
         <button type="submit">Confirmar asistencia</button>
       </form>
