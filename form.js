@@ -15,11 +15,11 @@
       }
 
       try {
-        const res = await fetch('https://cyayeykoiuqaytcjuwio.supabase.co/rest/v1/rsvp', {
+        const res = await fetch('https://csxsauqynxbhztldpevb.supabase.co/rest/v1/rsvp', {
           method: 'POST',
           headers: {
-            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5YXlleWtvaXVxYXl0Y2p1d2lvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ2NTI1NTMsImV4cCI6MjA3MDIyODU1M30.mgoBZNnJMnHPgiNSDkd4kIQZL1EeA20Na1Mct6Mtass',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5YXlleWtvaXVxYXl0Y2p1d2lvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ2NTI1NTMsImV4cCI6MjA3MDIyODU1M30.mgoBZNnJMnHPgiNSDkd4kIQZL1EeA20Na1Mct6Mtass',
+            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzeHNhdXF5bnhiaHp0bGRwZXZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2MzM2OTUsImV4cCI6MjA3MTIwOTY5NX0.QPSkbHiwXkDCMk5ohICFUEcNfSmoBmsyYVUIrDXt3AY',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNzeHNhdXF5bnhiaHp0bGRwZXZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2MzM2OTUsImV4cCI6MjA3MTIwOTY5NX0.QPSkbHiwXkDCMk5ohICFUEcNfSmoBmsyYVUIrDXt3AY',
             'Content-Type': 'application/json',
             'Prefer': 'return=minimal'
           },
